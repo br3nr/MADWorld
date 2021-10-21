@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Activities.DetailsPopupActivity">
+
+    <TextView
+        android:id="@+id/details_coordinate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/details_structure"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/details_structure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/details_coordinate"
+        app:layout_constraintBottom_toTopOf="@id/cameraButton"
+        android:textSize="25sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/owner_preview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/details_structure"
+        app:layout_constraintBottom_toTopOf="@id/owner_text"
+        android:textSize="25sp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/owner_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/owner_text_button"
+        app:layout_constraintTop_toBottomOf="@id/owner_preview"
+        app:layout_constraintHorizontal_weight="1.0"
+        app:layout_constraintBottom_toTopOf="@id/owner_text"
+
+        android:hint="Owner"
+        />
+    
+    <Button
+        android:id="@+id/owner_text_button"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="0.25"
+        app:layout_constraintTop_toBottomOf="@id/owner_preview"
+        app:layout_constraintLeft_toRightOf="@id/owner_text"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/cameraButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/owner_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_baseline_photo_camera_24"
+        />
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

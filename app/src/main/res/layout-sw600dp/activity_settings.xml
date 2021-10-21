@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Activities.SettingsActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:id="@+id/settingsTitle"
+       android:text="@string/settings"
+       android:textSize="75sp"
+       android:gravity="center"
+       android:textStyle="bold"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintBottom_toTopOf="@id/editMoney"
+       />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/editMoney"
+        android:inputType="number"
+        android:hint="Initial$$ :  MUST NOT BE EMPTY"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@id/settingsTitle"
+        app:layout_constraintBottom_toTopOf="@id/editHeight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/editHeight"
+        android:inputType="number"
+        android:hint="Height :  MUST NOT BE EMPTY"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@id/editMoney"
+        app:layout_constraintBottom_toTopOf="@id/editWidth"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/editWidth"
+        android:inputType="number"
+        android:hint="Width :  MUST NOT BE EMPTY"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@id/editHeight"
+        app:layout_constraintBottom_toTopOf="@id/settingsButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="SUBMIT"
+        app:layout_constraintTop_toBottomOf="@id/editWidth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

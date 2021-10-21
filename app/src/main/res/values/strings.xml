@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MADWorld</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">description</string>
+    <string name="settings">SETTINGS</string>
+    <string name="initial">Initial $$:</string>
+    <string name="height">Height :</string>
+    <string name="width">Width :</string>
+
+
+    <!-- Settings Popup Strings -->
+
+</resources>

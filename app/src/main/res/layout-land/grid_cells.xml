@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_cells_boi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/grid1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/description"
+        app:layout_constraintBottom_toTopOf="@id/grid3"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.5"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/grid2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/grid2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:contentDescription="@string/description"
+        app:layout_constraintBottom_toTopOf="@id/grid4"
+
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.5"
+
+        app:layout_constraintLeft_toRightOf="@id/grid1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/grid3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:contentDescription="@string/description"
+
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.5"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/grid4"
+        app:layout_constraintTop_toBottomOf="@id/grid1"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/grid4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:contentDescription="@string/description"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.5"
+
+        app:layout_constraintLeft_toRightOf="@id/grid3"
+        app:layout_constraintRight_toRightOf="parent
+"
+        app:layout_constraintTop_toBottomOf="@id/grid2"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/gridS"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/description"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
